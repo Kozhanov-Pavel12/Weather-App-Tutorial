@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    font-family: 'Roboto', sans-serif; 
+    color: white;
+}
+
+#intro {
+    height: 100vh;
+    width: 100vw;
+}
+
+.inner-content {
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.meters {
+    display: flex;
+}
+
+.meters p{
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.location, .temperature {
+    margin: 0 auto;
+    height: 20vh;
+    display: flex;
+    width: 70%;
+}
+
+.temperature {
+    flex-direction: column;
+}
+
+.location-timezone {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+span {
+    font-size: 30px;
+}
+
+.degree-secton {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.degree-secton-temperature span {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.degree-secton h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.degree-secton-temperature, 
+.degree-secton-pressure, 
+.degree-secton-wind,
+.degree-secton-humidity {
+    display: flex;
+    margin-right: 40px;
+    width: 200px;
+}
+
+.degree-secton-pressure,
+.degree-secton-wind,
+.degree-secton-humidity {
+    flex-direction: column;
+}
+
+.temperature-description {
+    font-size: 20px;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 15px ;
+    border-radius: 10px;
+    background: linear-gradient(rgb(37, 100, 216), rgb(3, 12, 66));
+    margin-right: 20px;
+    color: white;
+}
+
+#button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: linear-gradient(rgb(37, 100, 216), rgb(3, 12, 66));
+    cursor: pointer;
+    margin-right: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+::placeholder {
+    color: wheat;
+    letter-spacing: 2px;
+}
+
+#str {
+    text-transform: uppercase;
+    text-decoration: underline;
+}

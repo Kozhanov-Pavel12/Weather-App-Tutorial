@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App Tutorial</title>
+</head>
+<body>
+    <div id="intro">
+        <div class="inner-content">
+            <div class="location">
+
+                    <input type="text" class="location-timezone" placeholder="Timezone..." id="inp_1" autocomplete="off"></input>
+                    <button type="submit" id="button" value="Получить информацию" id="inp_2">Сделать запрос</button>
+                    <h1 id="str">Timezone</h1>
+            </div>
+            <div class="temperature">
+                <div class="degree-secton">
+                    <div class="degree-secton-temperature">
+                        <h2 class="temperature-degree">0</h2>
+                        <span>K</span>
+                    </div>
+                    <div class="degree-secton-pressure">
+                        <h2>Pressure</h2>
+                        <span></span>
+                    </div>
+                    <div class="degree-secton-wind">
+                        <h2>Wind speed</h2>
+                        <div class="meters">
+                            <span></span>
+                            <p>m/s</p>
+                        </div>
+                    </div>
+                    <div class="degree-secton-humidity">
+                        <h2>Humidity</h2>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="temperature-description">Its friggin cold</div>
+            </div> 
+        </div> 
+    </div>
+
+
+    <script src="three.r119.min.js"></script>
+    <script src="vanta.net.min.js"></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
